@@ -10,5 +10,4 @@ import org.springframework.stereotype.Repository;
 public interface AnimalRepository extends JpaRepository<Animal, Long> {
 
     Animal findByName(@Param("name") String name);
-    Animal findById(long id);
 }
