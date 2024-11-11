@@ -53,7 +53,7 @@ Ce projet est une API REST développée avec Spring Boot, permettant la gestion 
 ### ![PUT](https://img.shields.io/badge/PUT-orange) Editer
 - Modifie l'animal existant par son ID.
 - **URL** : `/api/animal/{id}/edit`
-- - **Body** :
+- **Body** :
   ```json
   {
     "name": "castor"
