@@ -1,5 +1,12 @@
 # Documentation de l'API
 
+Ce projet est une API REST développée avec Spring Boot, permettant la gestion des utilisateurs et d'un catalogue d'animaux via des opérations CRUD sécurisées par un système d'authentification JWT.
+
+- Backend : Spring Boot
+- Base de données : PostgreSQL
+- Sécurité : JWT (JSON Web Tokens)
+ <br>
+ 
 ## Authentification
 
 ### ![POST](https://img.shields.io/badge/POST-blue) S'inscrire
