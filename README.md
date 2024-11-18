@@ -1,3 +1,5 @@
+<h1>PAS A JOUR // EN COURS DE REDACTION </h1>
+
 Ce projet est une API REST développée avec Spring Boot, permettant la gestion des utilisateurs et d'un catalogue d'animaux via des opérations CRUD sécurisées par un système d'authentification JWT.
 
 - Backend : Spring Boot, Maven
@@ -21,7 +23,7 @@ Ce projet est une API REST développée avec Spring Boot, permettant la gestion 
 
 ### ![POST](https://img.shields.io/badge/POST-blue) Generer Token
 - Génère un token JWT pour l'utilisateur afin de s'authentifier aux endpoints sécurisés.
-- **URL** : `/auth/register`
+- **URL** : `/auth/login`
 - **Body** :
   ```json
   {
@@ -39,10 +41,12 @@ Ce projet est une API REST développée avec Spring Boot, permettant la gestion 
  
 ### ![GET](https://img.shields.io/badge/GET-brightgreen) Afficher
 - Récupère les détails d'un animal spécifique par son ID.
+- Necessite Bearer Token
 - **URL** : `/api/animal/{id}`
 
 ### ![POST](https://img.shields.io/badge/POST-blue) Créér
 - Crée un nouvel animal avec le nom fourni.
+- - Necessite Bearer Token
 - **URL** : `/api/animal/{id}`
 - **Body** :
   ```json
@@ -52,6 +56,7 @@ Ce projet est une API REST développée avec Spring Boot, permettant la gestion 
 
 ### ![PUT](https://img.shields.io/badge/PUT-orange) Editer
 - Modifie l'animal existant par son ID.
+- Necessite Bearer Token
 - **URL** : `/api/animal/{id}/edit`
 - **Body** :
   ```json
@@ -61,5 +66,6 @@ Ce projet est une API REST développée avec Spring Boot, permettant la gestion 
 
 ### ![DELETE](https://img.shields.io/badge/DELETE-red) Supprimer
 - Supprime un animal spécifique par son ID.
+- Necessite Bearer Token
 - **URL** : `/api/animal/{id}/delete`
 
